@@ -1,3 +1,37 @@
 body{
     font-family: "Montserrat", sans-serif;
 }
+
+
+.green-header{
+    height: 20vh;
+    width: 100%;
+    background-color: #3fa99c;
+}
+
+.grey-header{
+    height: 80vh;
+    background-color: #dcdfd8;
+    margin: 0 auto;
+}
+
+
+.grey-header > div{
+    top: -50px;
+    left: 15%;
+}
+.my-chat-wrapper{
+    height: 75vh;
+    width: 100%;
+    background-color: aqua;
+    padding: 0;
+}
+
+.my-user-section{
+    height: 100%;
+}
+
+.my-message-section{
+    height: 100%;
+    background-color: aquamarine;
+}

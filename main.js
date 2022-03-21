@@ -1,13 +1,13 @@
-const app = new Vue (
-    {
-        el : '#app',
+// const app = new Vue (
+//     {
+//         el : '#app',
         
-        data :'',
+//         data :'',
         
-        methods : {
+//         methods : {
             
-        },
+//         },
         
-} 
-);
+// } 
+// );
 
