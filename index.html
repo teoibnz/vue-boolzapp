@@ -36,10 +36,15 @@
                             <div class="col-12 desktop-update"></div>
                             <div class="col-12 my-search-bar"></div>
 
+                            <!-- lista chat aperte -->
                             <div class="col-12 my-open-chat">
-                                <div class="col-12">
-                                    <div class="col-2 contact-img"></div>
-                                    <div class="col-10"></div>
+                                <div class="col-12 my-chat-container d-flex my-2" v-for="(user, index) in contacts">
+                                    <div class="col-2 contact-img ">
+                                        <img  class="img-fluid border-dark rounded-circle p-1 mx-3" :src="contacts[index].avatar" alt="">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="align-bottom mt-2 mx-3 fs-5"> {{contacts[index].name}} </p>
+                                    </div>
                                 </div>
                             </div>
 
