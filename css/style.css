@@ -70,3 +70,17 @@ body{
     height: 10%;
     border: 1px solid black;
 }
+
+/* classi per i messaggi inviati e ricevuti */
+
+.my-send-message{
+    text-align: right;
+    background-color: #c4f999;
+    border-radius: 10%;
+}
+
+.my-received-message{
+    text-align: left;
+    background-color: #edfee0;
+    border-radius: 10%;
+}
