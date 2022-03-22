@@ -106,12 +106,14 @@ const app = new Vue (
                 },
             
             ],
-            activeIndex : [],
+            activeIndex : 0,
             isMessageSent : true,
         },
         
         // methods : {
-            
+        //     isActiveElement(){
+        //         this.activeIndex = this.contacts;
+        //     }
         // },
         
 }
