@@ -106,6 +106,8 @@ const app = new Vue (
                 },
             
             ],
+            activeIndex : [],
+            isMessageSent : true,
         },
         
         // methods : {
