@@ -68,6 +68,10 @@ body{
     padding: 2rem;
 }
 
+.my-search-bar input{
+    width: 75%;
+}
+
 .my-open-chat{
     height: calc(100% - 25%);
 }
@@ -80,7 +84,7 @@ body{
 
 .my-text-input-area{
     width: 100%;
-    height: 10%;
+    height: 7%;
 }
 
 .my-chat-container.active{
@@ -105,4 +109,9 @@ body{
 
 .contact-img{
     height: 100%;   
+}
+
+.my-input{
+    width: 90%;
+    height: 100%;
 }

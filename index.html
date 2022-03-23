@@ -50,6 +50,7 @@
                             </div>
                             <div class="col-12 my-search-bar">
                                 <i class="fa-solid fa-magnifying-glass p-2 fs-5"></i>
+                                <input  class='border-0 ms-4' type="text">
                             </div>
 
                             <!-- lista chat aperte -->
@@ -60,6 +61,7 @@
                                     </div>
                                     <div class="col-10">
                                         <p class="align-bottom mt-2 mx-3 fs-5"> {{contacts[index].name}} </p>
+                                        <p class="text-secondary ms-3">Ultimo messaggio inviato</p>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +69,9 @@
                         </div>
                         <!-- sezione chat -->
                         <div class="col-8 my-message-section">
-                            <div class="col-12 user-picture"></div>
+                            <div class="col-12 user-picture">
+                                
+                            </div>
                             <div class="col-12 my-text-area p-5 d-flex flex-column">
                                 <div class="d-flex rounded-3 my-3 p-3" v-for="message in contacts[activeIndex].messages" :class="(message.status === 'received') ? 'my-received-message' : 'my-send-message' ">
                                     {{message.message}}
@@ -75,7 +79,8 @@
                                 
                             </div>
                             <div class="col-12 my-text-input-area">
-                                <input type="text" placeholder="Scrivi un messaggio" v-model="newMessageSend" @keyup.enter="sendNewMessage(contacts, activeIndex, newMessageSend)">
+                                <i class="fas fa-face-laugh-beam text-secondary fs-5 p-4"></i>
+                                <input class="my-input border-0" type="text" placeholder="Scrivi un messaggio" v-model="newMessageSend" @keyup.enter="sendNewMessage(contacts, activeIndex, newMessageSend)">
                             </div>
                         </div>
                     </div>
