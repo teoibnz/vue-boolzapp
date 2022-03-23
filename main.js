@@ -3,6 +3,8 @@ const app = new Vue (
         el : '#app',
         
         data : {
+            activeIndex : 0,
+
             contacts : [
                 {
                     name: 'Michele',
@@ -106,15 +108,13 @@ const app = new Vue (
                 },
             
             ],
-            activeIndex : 0,
-            isMessageSent : true,
         },
         
-        // methods : {
-        //     isActiveElement(){
-        //         this.activeIndex = this.contacts;
-        //     }
-        // },
+        methods : {
+            changeIndex(index){
+                this.activeIndex = index;
+            }
+        },
         
 }
 );

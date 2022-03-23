@@ -54,7 +54,7 @@
 
                             <!-- lista chat aperte -->
                             <div class="col-12 my-open-chat">
-                                <div class="col-12 my-chat-container d-flex my-2" v-for="(user, index) in contacts">
+                                <div class="col-12 my-chat-container d-flex my-2" v-for="(user, index) in contacts" :class=" (activeIndex == index) ? 'active' : '' " @click="changeIndex(index)">
                                     <div class="col-2 contact-img ">
                                         <img  class="img-fluid border-dark rounded-circle p-1 mx-3" :src="contacts[index].avatar" alt="">
                                     </div>
@@ -69,8 +69,8 @@
                         <div class="col-8 my-message-section">
                             <div class="col-12 user-picture"></div>
                             <div class="col-12 my-text-area p-5">
-                                <div class="d-flex justify-content-end" v-for="(message, messageIndex) in contacts">
-                                    <p class="my-send-message p-3"> {{contacts[activeIndex].messages[messageIndex]}} </p>
+                                <div class="d-flex justify-content-end my-send-message p-3" v-for="message in contacts[activeIndex].messages" :class="(messages.status === 'received') ? 'received' : 'sent' ">
+                                    {{messages.message}}
                                 </div>
                                 <!-- <div class="d-flex justify-content-end">
                                     <p class="my-send-message p-3">Ciao, come stai?</p>

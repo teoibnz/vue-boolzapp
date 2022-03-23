@@ -85,6 +85,9 @@ body{
     border: 1px solid black;
 }
 
+.my-chat-container.active{
+    background-color: darkgrey;
+}
 /* classi per i messaggi inviati e ricevuti */
 
 .my-send-message{
@@ -99,9 +102,7 @@ body{
     border-radius: 10%;
 }
 
-/* contenitore chat singola */
-/* .my-chat-container{
-} */
+
 
 .contact-img{
     height: 100%;   
