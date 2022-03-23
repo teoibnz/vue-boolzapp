@@ -115,13 +115,32 @@ const app = new Vue (
                 this.activeIndex = index;
             },
 
-            sendNewMessage(contacts, index, newMessage){
-                this.messageToadd.push({
+            sendNewMessage(contacts, index, messageContent){
+                const newMessageElement = {
                     date: '10/01/2020 15:30:55',
-                    message: 'Ricordati di chiamare la nonna',
+                    message: messageContent,
                     status: 'sent'
-                })
-            }
+                };
+                contacts[index].messages.push(newMessageElement);
+                this.clearStringInput();
+
+                setTimeout((
+                    newBotResponse = {
+                        date: '10/01/2020 15:30:55',
+                        message: 'Ok',
+                        status: 'received'
+                    },
+                    contacts[index].messages.push(newBotResponse)
+                ), 3000)
+            },
+
+            
+
+            clearStringInput(){
+                this.newMessageSend = '';
+            },
+
+            
         },
         
 }

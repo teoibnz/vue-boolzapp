@@ -74,7 +74,9 @@
                                 </div>
                                 
                             </div>
-                            <div class="col-12 my-text-input-area"></div>
+                            <div class="col-12 my-text-input-area">
+                                <input type="text" placeholder="Scrivi un messaggio" v-model="newMessageSend" @keyup.enter="sendNewMessage(contacts, activeIndex, newMessageSend)">
+                            </div>
                         </div>
                     </div>
                 </div>
