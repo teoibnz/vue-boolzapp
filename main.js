@@ -4,7 +4,7 @@ const app = new Vue (
         
         data : {
             activeIndex : 0,
-
+            newMessageSend : '',
             contacts : [
                 {
                     name: 'Michele',
@@ -113,6 +113,14 @@ const app = new Vue (
         methods : {
             changeIndex(index){
                 this.activeIndex = index;
+            },
+
+            sendNewMessage(contacts, index, newMessage){
+                this.messageToadd.push({
+                    date: '10/01/2020 15:30:55',
+                    message: 'Ricordati di chiamare la nonna',
+                    status: 'sent'
+                })
             }
         },
         
